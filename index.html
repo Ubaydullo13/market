@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Список покупок</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Список покупок</h1>
+      <form class="amount">
+        <input type="number" value="" placeholder="Введите сумму ваших денег" />
+        <a href="#" class="btn" id="btn">ИТОГО</a>
+      </form>
+
+      <div class="products">
+        <div class="product-card">
+          <h3 class="product-card__title">Морковь</h3>
+          <img
+            class="product-card__image"
+            width="60px"
+            src="./images/carrot-icon.svg"
+            alt="carrot-icon"
+          />
+          <label for="price" class="product-card__price"
+            ><p>Цена за кг</p>
+            <input name="price" type="number" value="5000" />UZS</label
+          >
+          <div class="product-card__num">
+            <button id="add" class="product-card__btn">+</button>
+            <input id="num" type="number" value="1" />
+            <button id="reduce" class="product-card__btn">-</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <h3 class="product-card__title">Томаты</h3>
+          <img
+            class="product-card__image"
+            width="60px"
+            src="./images/tomato-icon.svg"
+            alt="tomato-icon"
+          />
+          <label for="price" class="product-card__price"
+            ><p>Цена за кг</p>
+            <input name="price" type="number" value="25000" />UZS</label
+          >
+          <div class="product-card__num">
+            <button id="add" class="product-card__btn">+</button>
+            <input id="num" type="number" value="1" />
+            <button id="reduce" class="product-card__btn">-</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <h3 class="product-card__title">Огурцы</h3>
+          <img
+            class="product-card__image"
+            width="60px"
+            src="./images/cucumber-icon.svg"
+            alt="cucumber-icon"
+          />
+          <label for="price" class="product-card__price"
+            ><p>Цена за кг</p>
+            <input name="price" type="number" value="15000" />UZS</label
+          >
+          <div class="product-card__num">
+            <button id="add" class="product-card__btn">+</button>
+            <input id="num" type="number" value="1" />
+            <button id="reduce" class="product-card__btn">-</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <h3 class="product-card__title">Яблоки</h3>
+          <img
+            class="product-card__image"
+            width="60px"
+            src="./images/apple-icon.svg"
+            alt="apple-icon"
+          />
+          <label for="price" class="product-card__price"
+            ><p>Цена за кг</p>
+            <input name="price" type="number" value="15000" />UZS</label
+          >
+          <div class="product-card__num">
+            <button id="add" class="product-card__btn">+</button>
+            <input id="num" type="number" value="1" />
+            <button id="reduce" class="product-card__btn">-</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <h3 class="product-card__title">Груши</h3>
+          <img
+            class="product-card__image"
+            width="45px"
+            src="./images/pear-icon.svg"
+            alt="pear-icon"
+          />
+          <label for="price" class="product-card__price"
+            ><p>Цена за кг</p>
+            <input name="price" type="number" value="30000" />UZS</label
+          >
+          <div class="product-card__num">
+            <button id="add" class="product-card__btn">+</button>
+            <input id="num" type="number" value="1" />
+            <button id="reduce" class="product-card__btn">-</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <h3 class="product-card__title">Бананы</h3>
+          <img
+            class="product-card__image"
+            width="60px"
+            src="./images/bananas-icon.svg"
+            alt="bananas-icon"
+          />
+          <label for="price" class="product-card__price"
+            ><p>Цена за кг</p>
+            <input name="price" type="number" value="22000" />UZS</label
+          >
+          <div class="product-card__num">
+            <button id="add" class="product-card__btn">+</button>
+            <input id="num" type="number" value="1" />
+            <button id="reduce" class="product-card__btn">-</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <h3 class="product-card__title">Сахар</h3>
+          <img
+            class="product-card__image"
+            width="60px"
+            src="./images/Sugar.svg"
+            alt="Sugar"
+          />
+          <label for="price" class="product-card__price"
+            ><p>Цена за кг</p>
+            <input name="price" type="number" value="15000" />UZS</label
+          >
+          <div class="product-card__num">
+            <button id="add" class="product-card__btn">+</button>
+            <input id="num" type="number" value="1" />
+            <button id="reduce" class="product-card__btn">-</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <h3 class="product-card__title">Яйца</h3>
+          <img
+            class="product-card__image"
+            width="60px"
+            src="./images/egg.jpg"
+            alt="egg-icon"
+          />
+          <label for="price" class="product-card__price"
+            ><p>Цена за шт</p>
+            <input name="price" type="number" value="1500" />UZS</label
+          >
+          <div class="product-card__num">
+            <button id="add" class="product-card__btn">+</button>
+            <input id="num" type="number" value="1" />
+            <button id="reduce" class="product-card__btn">-</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MODAL -->
+    <div class="modal" id="modal">
+      <div class="modal__box">
+        <div class="modal__title">Список покупок</div>
+        <div class="modal__info"></div>
+        <div class="modal__bottom">
+          <a href="#" class="btn btn--close" id="btn_close">Закрыть</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

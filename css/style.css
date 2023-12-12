@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&display=swap');
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    background-color:rgb(247, 238, 238);
+}
+
+
+.container {
+    max-width: 1150px;
+    width: 100%;
+    margin: 0 auto;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .title{
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .amount{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 160%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+
+.amount input{
+    width: 300px;
+    background: rgb(36, 204, 61);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin:0;
+}
+
+  .products{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 20px;
+  }
+
+  .product-card__title{
+    margin-top: 15px;
+  }
+
+  .product-card__image{
+    margin-top: 20px;
+    margin-bottom: 35px;
+  }
+
+  .product-card{
+    width: 200px;
+    min-height: 300px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 4px;
+    transition: 0.2s;
+    position: relative;
+    background-color: #fff;
+  }
+
+.product-card:hover {
+    box-shadow: 4px 8px 16px rgba(255, 102, 51, 0.2);
+  }
+
+  .product-card input{
+    width: 60px;
+    text-align: center;
+
+  }  
+  .product-card__num{
+    display: flex;
+    margin-top: 20px;
+  }
+
+  .product-card__price p{
+   margin-bottom: 5px;
+  }
+
+  .product-card__price input{
+    text-align: center;
+    font-weight: 700;
+    border: none;
+  }
+
+  .product-card__btn{
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+
+
+
+  .modal {
+    display: none; /* По умолчанию окно закрыто */
+    z-index: 10; /* Чтобы сделать окно поверх всех элементов */
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный темный фон */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    align-items: flex-start;
+    justify-content: center;
+    overflow-y: scroll; /* При переполнении окна делаем скролл */
+    padding: 20px;
+  }
+  
+  .modal--open {
+    display: flex; /* Модификатор для открытого окна */
+  }
+  
+  .modal__box {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  .modal__title {
+    color: #111;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .modal__info {
+    color: #111;
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  
+  .modal__bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+  .btn {
+    background-color: #0066cc;
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .modal__bottom > .btn {
+    margin-right: 20px;
+  }
+  
+  .modal__bottom > .btn:last-child {
+    margin-right: 0;
+  }
+  
+  .modal__bottom > .btn--close {
+    background-color: #dedede;
+    color: #0066cc;
+  }
+
+  .lock {
+    overflow-y: hidden;
+  }
